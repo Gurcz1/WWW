@@ -31,20 +31,16 @@
             <form action="https://formsubmit.co/jakub.goralski@student.uwm.edu.pl" method="POST">
                 <fieldset>
                     <legend>Dane podstawowe</legend>
-                    
                     <label for="imie">Imię:</label>
                     <input type="text" id="imie" name="imie" required>
-                    
                     <label for="email">Adres e-mail:</label>
                     <input type="email" id="email" name="email" placeholder="przyklad@domena.com" required>
-
                     <label for="tel">Telefon:</label>
                     <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" required>
                 </fieldset>
 
                 <fieldset>
                     <legend>Szczegóły zapytania</legend>
-
                     <label for="temat">Temat zapytania:</label>
                     <select id="temat" name="temat">
                         <option value="sugestia">Sugestia</option>
@@ -52,10 +48,8 @@
                         <option value="wspolpraca">Współpraca</option>
                         <option value="inne" selected>Inne</option>
                     </select>
-
                     <label for="wiadomosc">Treść wiadomości:</label>
                     <textarea id="wiadomosc" name="wiadomosc" rows="8" required></textarea>
-
                     <label>Preferowany termin kontaktu:</label>
                     <div class="date-range">
                         <label for="data_od">Od:</label>
@@ -72,13 +66,12 @@
                 </fieldset>
 
                 <div class="form-buttons">
-                    <button type="submit">Wyślij</button>
                     <button type="reset">Anuluj</button>
+                    <button type="submit">Wyślij</button>
                 </div>
             </form>
         </section>
     </main>
-    
     <footer>
         <p>&copy; 2025 Giganci Architektury. Wszelkie prawa zastrzeżone.</p>
     </footer>
