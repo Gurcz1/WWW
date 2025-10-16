@@ -126,7 +126,7 @@ button[type="reset"] {
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column; 
-        gap: 0;
+        gap: 1em;
     }
     
     .form-buttons {
