@@ -41,6 +41,12 @@ main {
     flex-grow: 1;
 }
 
+/* --- STYL NAGŁÓWKA --- */
+#link {
+    color: #fff; 
+    text-decoration: none;
+}
+
 /* --- NAWIGACJA --- */
 nav ul {
     list-style: none;
@@ -80,6 +86,7 @@ nav a:hover {
 .main-content {
     flex: 2 1 400px;
     min-width: 300px;
+    font-size: x-large;
 }
 
 .sidebar {
@@ -140,6 +147,46 @@ nav a:hover {
     text-align: center;
     font-weight: bold;
     margin-top: auto;
+}
+
+/* --- STYLE TABEL --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.75em;
+    text-align: center;
+}
+
+thead {
+    background-color: #f5f5f5; 
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /
+}
+
+/* --- STYL ATRYBUCJI ZDJĘCIA --- */
+.photo-credit {
+    display: block;
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #777;
+    margin-top: 0.5em;
+}
+
+.photo-credit a {
+    color: #555;
+    text-decoration: underline; 
+}
+
+.photo-credit a:hover {
+    color: #000;
 }
 
 /* --- FORMULARZ --- */

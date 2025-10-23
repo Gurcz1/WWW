@@ -2,6 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projekt 1">
     <meta name="keywords" content="HTML5, CSS3, JavaScript">
     <meta name="author" content="Jakub Góralski">
@@ -10,20 +11,85 @@
 </head>
 <body>
     <header>
-        <h1>Giganci Architektury</h1>
+        <h1><a href="index.html" id="link">Giganci Architektury</a></h1>
     </header>
+
     <nav>
         <ul>
             <li><a href="index.html">Start</a></li>
             <li><a href="najwyzszebud.html">Najwyższe budynki</a></li>
-            <li><a href="najpow.html">Największe powierzchniowo</a></li>
-            <li><a href="historyczne.html">Historyczne budynki</a></li>
+            <li><a href="najpow.html" class="active">Największe powierzchniowo</a></li>
             <li><a href="galeria.html">Galeria</a></li>
             <li><a href="formularz.html">Formularz</a></li>
         </ul>
     </nav>
+
+    <main>
+        <div class="main-layout">
+            <aside class="sidebar">
+                <figure>
+                    <img src="img/img9.jpg" alt="New Century Global Center">
+                    <figcaption>New Century Global Center, Chiny
+                        <span class="photo-credit"> Zdjęcie: <a href="https://www.instagram.com/nickkuratnik/" target="_blank" rel="noopener noreferrer">Nick Kuratnik</a>
+                    </figcaption>
+                </figure>
+            </aside>
+
+            <article class="main-content">
+                <h2>Top 5: Budynki o największej powierzchni</h2>
+                <p>Poniższa tabela przedstawia 5 budynków o największej powierzchni użytkowej na świecie. Skala tych konstrukcji jest trudna do wyobrażenia.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lp.</th>
+                            <th>Budynek</th>
+                            <th>Powierzchnia</th>
+                            <th>Lokalizacja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>New Century Global Center</td>
+                            <td>1 760 000 m²</td>
+                            <td>Chengdu, Chiny</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Abraj Al-Bait Clock Tower</td>
+                            <td>1 500 000 m²</td>
+                            <td>Mekka, Arabia Saudyjska</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Dubai Mall</td>
+                            <td>1 124 000 m²</td>
+                            <td>Dubaj, ZEA</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Aalsmeer Flower Auction</td>
+                            <td>990 000 m²</td>
+                            <td>Aalsmeer, Holandia</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Tesla Giga Texas</td>
+                            <td>929 000 m²</td>
+                            <td>Austin, USA</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Więcej zdjęć konstrukcji znajdziesz w <a href="galeria.html">galerii</a>.</p>
+            </article>
+
+        </div>
+    </main>
+    
     <footer>
-        <p>2025 Giganci Architektury</p>
+        <p>&copy; 2025 Giganci Architektury</p>
     </footer>
+
 </body>
 </html>
