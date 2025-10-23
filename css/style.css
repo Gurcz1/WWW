@@ -48,8 +48,10 @@ nav ul {
     margin: 0;
     background-color: #444;
     display: flex;
-    justify-content: center;
-    gap: 1.5em;
+}
+
+nav li {
+    flex-grow: 1;
 }
 
 nav a {
@@ -57,13 +59,14 @@ nav a {
     font-weight: bold;
     color: white;
     text-decoration: none;
-    display: inline-block;
+    display: block;
+    text-align: center;
     padding: 0.75em 1.5em;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
     background-color: #3b1c1c71;
-    border-radius: 7px;
 }
 
 /* --- Start --- */
@@ -219,12 +222,40 @@ button[type="reset"] {
 
 
 /* --- RESPONSYWNOŚĆ --- */
-@media (max-width: 600px) {
+@media (max-width: 768px) { 
+    
+    /* --- NAWIGACJA MOBILNA --- */
     nav ul {
         flex-direction: column; 
-        gap: 1em;
+        gap: 0.25em; 
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    /* --- GŁÓWNY UKŁAD (START) --- */
+    .main-layout {
+        flex-direction: column; 
+    }
+
+    /* --- KONTENER GŁÓWNY (MAIN) --- */
+    main {
+        margin: 0;
+        padding: 1em;   
+    }
+
+    .main-content, .sidebar {
+        flex-basis: auto;
+        flex-grow: 0;
     }
     
+    /* --- GALERIA MOBILNA --- */
+    .gallery img {
+        max-width: 100%;
+    }
+
+    /* --- FORMULARZ MOBILNY --- */
     .form-buttons {
         flex-direction: column;
         width: 100%;
