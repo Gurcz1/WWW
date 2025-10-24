@@ -295,6 +295,15 @@ button[type="reset"] {
     .main-content, .sidebar {
         flex-basis: auto;
         flex-grow: 0;
+    
+    }
+
+    .main-content {
+        font-size: 1em;
+    }
+
+    .sidebar figcaption {
+        font-size: medium;
     }
     
     /* --- GALERIA MOBILNA --- */
