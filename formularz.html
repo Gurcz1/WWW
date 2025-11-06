@@ -11,7 +11,12 @@
 </head>
 <body>
     <header>
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo Giganci Architektury" class="logo">
+        </a>
+
         <h1><a href="index.html" id="link">Giganci Architektury</a></h1>
+
         <span id="data"></span>
         <span id="czas"></span>
         <script src="js/czasdata.js"></script>
@@ -30,7 +35,7 @@
         <section class="form-section">
             <h2>Formularz kontaktowy</h2>
             <p>Masz pytanie lub sugestię? Wypełnij poniższy formularz, aby się z nami skontaktować.</p>
-            <form action="https://formsubmit.co/jakub.goralski@student.uwm.edu.pl" method="POST">
+            <form action="https://formsubmit.co/jakub.goralski@student.uwm.edu.pl" method="POST" id="form-section">
                 <fieldset>
                     <legend>Dane podstawowe</legend>
                     <label for="imie">Imię:</label>
@@ -39,6 +44,14 @@
                     <input type="email" id="email" name="email" placeholder="przyklad@domena.com" required>
                     <label for="tel">Telefon:</label>
                     <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" required>
+                    <label>Preferowana forma kontaktu:</label>
+                    <div>
+                        <input type="radio" id="kontakt_email" name="preferowany_kontakt" value="email" checked>
+                        <label for="kontakt_email" class="inline-label">Email</label>
+
+                        <input type="radio" id="kontakt_tel" name="preferowany_kontakt" value="telefon">
+                        <label for="kontakt_tel" class="inline-label">Telefon</label>
+                    </div>
                 </fieldset>
 
                 <fieldset>
@@ -54,10 +67,10 @@
                     <textarea id="wiadomosc" name="wiadomosc" rows="8" required></textarea>
                     <label>Preferowany termin kontaktu:</label>
                     <div class="date-range">
-                        <label for="data_od">Od:</label>
-                        <input type="date" id="data_od" name="data_od">
-                        <label for="data_do">Do:</label>
-                        <input type="date" id="data_do" name="data_do">
+                        <label for="dataOd">Od:</label>
+                        <input type="date" id="dataOd" name="data_od">
+                        <label for="dataDo">Do:</label>
+                        <input type="date" id="dataDo" name="data_do">
                     </div>
 
                     <label>Zgoda na przetwarzanie danych:</label>
@@ -78,5 +91,6 @@
     <footer>
         <p>2025 Giganci Architektury</p>
     </footer>
+    <script src="js/walidacja.js"></script>
 </body>
 </html>

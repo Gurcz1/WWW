@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded",startCzasData)
 
 function startCzasData() {
     piszdata();
+    piszczas();
     setInterval(piszczas, 1000);
 }
 
