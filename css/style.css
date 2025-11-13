@@ -59,7 +59,6 @@ header {
 }
 
 .tagline {
-    margin: 5px 0 0 0;
     font-size: 1em;
     color: #ccc;
     font-weight: normal;
@@ -120,9 +119,6 @@ nav a:hover {
 
 .sidebar figure {
     margin: 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    overflow: hidden;
 }
 
 .sidebar img {
@@ -132,10 +128,8 @@ nav a:hover {
 }
 
 .sidebar figcaption {
-    padding: 0.5em;
     background-color: #f9f9f9;
     text-align: center;
-    font-weight: bold;
     font-size: large;
 }
 
@@ -143,16 +137,12 @@ nav a:hover {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 0.5em;
-    padding: 1em;
     justify-content: center;
-    align-items: flex-start;
 }
 
 .gallery figure {
     margin: 0;
-    border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -235,12 +225,10 @@ fieldset {
 
 legend {
     font-weight: bold;
-    padding: 0 0.5em;
 }
 
 label {
     display: block;
-    margin-bottom: 0.5em;
 }
 
 label.inline-label {
@@ -344,7 +332,7 @@ header {
     }
     
     .sidebar figure {
-        max-width: 400px; /* Maksymalna szerokość figure */
+        max-width: 400px;
         margin: 0 auto;
     }
     
